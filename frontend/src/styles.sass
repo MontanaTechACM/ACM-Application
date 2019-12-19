@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'inputs'
+
+body
+    margin: 0
+    padding: 0
+
+.center
+    text-align: center
+    margin-left: auto
+    margin-right: auto
+
+.invis
+    display: none
+
+.header
+    grid-area: header
+
+.footer
+    grid-area: footer
+
+.main-content
+    grid-area: main
+
+.main-container
+    display: grid
+    grid-template-columns: 10% 80% 10%
+    grid-template-rows: auto
+    grid-template-areas: "header header header" ". main ." "footer footer footer"

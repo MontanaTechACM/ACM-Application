@@ -1,0 +1,58 @@
+@import '../../pallet'
+
+$border_blue: darken($acm_blue, 6%)
+
+.main-navbar
+    display: flex
+    background-color: $acm_blue
+    border-bottom: 1px solid $border_blue
+    img
+        max-width: 64px
+        max-height: 42px
+        vertical-align: middle
+        margin-left: 1em
+        margin-right: 1em
+        display: inline
+    .menu-block
+        display: inline
+        width: 100%
+        .main-menu
+            display: flex
+            justify-content: space-between
+            .main-menu-frame
+                display: block
+            ul
+                margin: 0
+                padding: 0
+                list-style-type: none
+                li
+                    display: inline-block
+                    vertical-align: middle
+    .bars-block
+        display: none
+    @media screen and (max-width: 600px)
+        .menu-block
+            display: none
+        .bars-block
+            display: inline
+            margin-left: auto
+            padding: 0.2em
+            font-size: 25px
+            vertical-align: middle
+            margin-right: 0.4em
+            color: white
+
+.bars-menu-content
+    display: none
+
+@media screen and (max-width: 600px)
+    .bars-menu-content
+        display: block
+    .button
+        text-align: left !important
+        border-bottom: 1px solid $border_blue
+    a
+        width: 100%
+    button
+        width: 100%
+        display: inline

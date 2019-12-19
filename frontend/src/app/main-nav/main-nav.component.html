@@ -1,0 +1,20 @@
+<nav class="main-navbar">
+    <img src="assets/MTA.png"/>
+    <div class="menu-block">
+        <div class="main-menu">
+            <ul class="main-menu-frame">
+                <a routerLink=""><li class="button acm_blue">Home</li></a>
+                <a><li class="button acm_blue">Profile</li></a>
+            </ul>
+            <ul class="main-menu-frame">
+                <a class="button acm_blue"><li><app-login-pop-up></app-login-pop-up></li></a>
+            </ul>
+        </div>
+    </div>
+    <fa-icon (click)="toggleSubMenu()" class="bars-block" [icon]="faBars"></fa-icon>
+</nav>
+<div *ngIf="openedSubMenu" class="bars-menu-content">
+        <a routerLink="" class="button shallow_blue">Home</a>
+        <a class="button shallow_blue">Profile</a>
+        <a class="button shallow_blue"><app-login-pop-up></app-login-pop-up></a>
+</div>

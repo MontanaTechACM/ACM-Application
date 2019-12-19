@@ -1,0 +1,45 @@
+@import 'pallet'
+    
+=button-theme($btn-color)
+    background-color: $btn-color
+    &:hover
+        background-color: darken($btn-color, 6%)
+    &:active
+        background-color: lighten($btn-color, 6%)
+    text:
+        decoration: none
+        shadow: 0 .064em rgba(black,0.3)
+
+.button
+    border: none
+    font-size: 16px
+    display: inline-block
+    color: white
+    padding: 14px 28px
+    text-align: center
+
+.green
+    +button-theme($green)
+
+.blue
+    +button-theme($blue)
+
+.acm_blue
+    +button-theme($acm_blue)
+
+.shallow_blue
+    +button_theme($shallow_blue)
+
+input[type=email]
+    width: 100%
+    padding: 12px 20px
+    margin: 8px 0
+    box-sizing: border-box
+    font-size: 16px
+
+input[type=password]
+    width: 100%
+    padding: 12px 20px
+    margin: 8px 0
+    box-sizing: border-box
+    font-size: 16px

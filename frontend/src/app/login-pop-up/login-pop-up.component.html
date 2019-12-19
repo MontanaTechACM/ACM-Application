@@ -1,0 +1,15 @@
+<a (click)="toggleLogin()">Login</a>
+<div *ngIf="visible" class="login-pop-up-root">
+    <div class="login-pop-up-frame">
+        <form>
+            <span>Email</span><input type="email" name="email"/><br>
+            <span>Password</span><input type="password" name="password"/><br>
+            <br>
+            <div class="center">
+                <button class="button blue" type="submit">Login</button>
+            </div>
+        </form>
+        <br>
+        <p class="center"><a href="">Don't have an account?</a></p>
+    </div>
+</div>
